@@ -1,5 +1,5 @@
 from pathlib import Path
-from discover.discover import Discover as disc
+from discover.discover import Discover
 from discover.timing import Timing as timing
 from discover import util
 
@@ -49,6 +49,7 @@ def mine_timings_from_dcr(input_event_log_path, output_dcr_graph_path, output_ti
 def mine_dcr(input_event_log_path, output_dcr_graph_path):
     print(f'[i] Mining dcr graph started')
     log = util.load_log(input_event_log_path)
+    disc = Discover()
     graph = disc.mine(log=log,graph_path=output_dcr_graph_path)
     print(f'[i] Mining dcr graph finished')
     return log, graph

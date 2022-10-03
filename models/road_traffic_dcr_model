@@ -1,0 +1,33 @@
+EVENT;Receive Result Appeal from Prefecture
+EVENT;Send Appeal to Prefecture
+EVENT;Insert Fine Notification
+EVENT;Payment
+EVENT;Insert Date Appeal to Prefecture
+EVENT;Appeal to Judge
+EVENT;Notify Result Appeal to Offender
+EVENT;Send Fine
+EVENT;Send for Credit Collection
+EVENT;Add penalty
+EVENT;Create Fine
+CONDITION;Send Fine;Receive Result Appeal from Prefecture
+CONDITION;Create Fine;Send Appeal to Prefecture
+CONDITION;Send Fine;Insert Fine Notification
+CONDITION;Create Fine;Payment
+CONDITION;Create Fine;Insert Date Appeal to Prefecture
+CONDITION;Create Fine;Appeal to Judge
+CONDITION;Insert Fine Notification;Notify Result Appeal to Offender
+CONDITION;Create Fine;Send Fine
+CONDITION;Add penalty;Send for Credit Collection
+CONDITION;Insert Fine Notification;Add penalty
+RESPONSE;Insert Fine Notification;Add penalty
+EXCLUDE;Receive Result Appeal from Prefecture;Receive Result Appeal from Prefecture
+EXCLUDE;Send Appeal to Prefecture;Send Appeal to Prefecture
+EXCLUDE;Insert Fine Notification;Insert Fine Notification
+EXCLUDE;Insert Date Appeal to Prefecture;Insert Date Appeal to Prefecture
+EXCLUDE;Appeal to Judge;Appeal to Judge
+EXCLUDE;Notify Result Appeal to Offender;Notify Result Appeal to Offender
+EXCLUDE;Send Fine;Send Fine
+EXCLUDE;Send for Credit Collection;Send for Credit Collection
+EXCLUDE;Send for Credit Collection;Payment
+EXCLUDE;Add penalty;Add penalty
+EXCLUDE;Create Fine;Create Fine
